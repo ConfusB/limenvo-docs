@@ -38,13 +38,18 @@
     <li><strong>Notifications:</strong> to show sequence progress and a stop control.</li>
     <li><strong>Foreground service and wake lock:</strong> to keep a short sequence running while the screen is off.</li>
   </ul>
-  <p>If you choose a gate number from your phone book, Android's contact picker gives Limenvo access to the phone number you select. Limenvo does not request access to your full address book or read your SMS messages or call history. The selected number is saved locally only when you save the gate. It does not record calls or collect your location. You can revoke permissions in Android settings; calling features will then be unavailable.</p>
+  <p>If you choose a gate number from your phone book, Android's contact picker gives Limenvo access to the phone number you select. Limenvo does not request access to your full address book or read your SMS messages or call history. The selected number is saved locally only when you save the gate. It does not record calls. Optional GPS spot testing uses location as described below. You can revoke permissions in Android settings; calling features will then be unavailable.</p>
+
+  <h2>GPS spots (test builds)</h2>
+  <p>When you choose to save a GPS spot, Limenvo uses precise location to save that position on your phone, together with its name, radius, sequence, IN or OUT direction and trigger preferences. You can save spots on foot. An optional Android Auto only setting checks the car connection before allowing a trigger.</p>
+  <p>You manually start a GPS test lasting up to 30 minutes. During that test, a visible foreground service checks your location even with the screen off. It uses live fixes to detect arrival at saved spots; it does not store a travel history or send locations to us. Stop the test in the app or its notification. The app does not request background location permission or restart GPS tests automatically. Location access is also used briefly when you save a spot.</p>
+  <p>Automatic calling is optional for each spot. When enabled, arrival can start its saved sequence; the confirmation preference still applies outside Demo mode. Delete spots in the app or clear app storage to remove their saved coordinates. GPS spots are not included in exported backups.</p>
 
   <h2>Keeping and deleting your data</h2>
   <p>Your saved settings remain on your device until you remove them. Delete sequences and gates in the app, or clear the app's storage or uninstall it to remove all its local data. Remove a gate from its sequences before deleting it. Limenvo excludes its saved settings from Android cloud backup and device transfer. Deleting app data does not delete records kept by your phone app, mobile provider or gate operator.</p>
 
   <h2>Backups and recent runs</h2>
-  <p>If you export a backup, Limenvo writes your gate numbers, routes, timings, favourites and calling preferences to the location you choose using Android's file picker. A cloud storage provider you select may receive that file under its own privacy policy. Backup files are not encrypted by Limenvo. SIM choices, widget assignments and recent runs are not included. After restoring, choose SIMs and configure widgets again.</p>
+  <p>If you export a backup, Limenvo writes your gate numbers, routes, timings, favourites and calling preferences to the location you choose using Android's file picker. A cloud storage provider you select may receive that file under its own privacy policy. Backup files are not encrypted by Limenvo. SIM choices, widget assignments, GPS spots and recent runs are not included. After restoring, choose SIMs and configure widgets again.</p>
   <p>You can clear recent runs in Settings. Clearing app storage or uninstalling does not delete backup files you exported; delete those separately from their saved location. Recent runs report call progress, not whether a gate physically opened.</p>
 
   <h2>Support</h2>
