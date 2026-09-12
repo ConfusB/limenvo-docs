@@ -23,10 +23,10 @@
   <div class="brand"><a href="app.html">LIMENVO</a></div>
   <h1>Privacy policy</h1>
   <p class="intro">Open your gates. No ads. No accounts. Your saved numbers stay on your phone.</p>
-  <p class="date">Effective 11 September 2026 · Android app: com.confus.limenvo</p>
+  <p class="date">Effective 12 September 2026 · Android app: com.confus.limenvo</p>
 
   <h2>What the app stores</h2>
-  <p>Limenvo stores your gate names and phone numbers, IN and OUT sequences, delays, widget choices, favourite routes, SIM choice, confirmation preference and demo setting locally on your device. It also keeps the last 50 Limenvo runs, including gate names, timestamps and call progress, on your device. These records are created by Limenvo; it does not read Android's call history. It does not send this saved data to us. The app has no analytics, advertising SDKs or developer-operated servers.</p>
+  <p>Limenvo stores your gate names and phone numbers, IN and OUT sequences, delays, widget choices, favourite routes, SIM choice, confirmation preference and demo setting locally on your device. It also keeps the last 50 Limenvo runs, including gate names, timestamps and call progress, on your device. These records are created by Limenvo; it does not read Android's call history. It does not send this saved data to us. Limenvo has no advertising SDKs or developer-operated servers. Map-enabled test builds use Google Maps as described below.</p>
 
   <h2>Phone calls and permissions</h2>
   <p>When you start a gate or sequence, Limenvo uses Android to call the numbers you chose. Your mobile provider and the gate operator may process the dialled number, your caller ID and call details under their own privacy policies. Normal call charges may apply. Android or your phone app may keep a call history.</p>
@@ -40,10 +40,14 @@
   </ul>
   <p>If you choose a gate number from your phone book, Android's contact picker gives Limenvo access to the phone number you select. Limenvo does not request access to your full address book or read your SMS messages or call history. The selected number is saved locally only when you save the gate. It does not record calls. Optional GPS spot testing uses location as described below. You can revoke permissions in Android settings; calling features will then be unavailable.</p>
 
-  <h2>GPS spots (test builds)</h2>
-  <p>When you choose to save a GPS spot, Limenvo uses precise location to save that position on your phone, together with its name, radius, sequence, IN or OUT direction and trigger preferences. You can save spots on foot. An optional Android Auto only setting checks the car connection before allowing a trigger.</p>
-  <p>You manually start a GPS test lasting up to 30 minutes. During that test, a visible foreground service checks your location even with the screen off. It uses live fixes to detect arrival at saved spots; it does not store a travel history or send locations to us. Stop the test in the app or its notification. The app does not request background location permission or restart GPS tests automatically. Location access is also used briefly when you save a spot.</p>
-  <p>Automatic calling is optional for each spot. When enabled, arrival can start its saved sequence; the confirmation preference still applies outside Demo mode. Delete spots in the app or clear app storage to remove their saved coordinates. GPS spots are not included in exported backups.</p>
+  <h2>GPS zones and gate markers (test builds)</h2>
+  <p>You can draw a nine-point inside zone and save gate positions, approach distances, a sequence and trigger preferences on your phone. Limenvo uses precise location when you choose My position and during a GPS test. It determines IN or OUT from the side you approached from. An optional Android Auto only setting checks the car connection before allowing a trigger.</p>
+  <p>You manually start a GPS test lasting up to 30 minutes. A visible foreground service checks location even with the screen off. Live fixes are used to detect approach; Limenvo does not store a travel history or send your saved zones, gate numbers or route library to us. Stop the test in the app or notification. Tests do not restart automatically. The app does not request background location permission.</p>
+  <p>Automatic calling is optional. Your confirmation preference still applies outside Demo mode. Delete zones in the app or clear app storage to remove saved coordinates. Zones, gate markers and legacy spots are not included in exported backups. Legacy IN/OUT spots remain locally after upgrading but no longer trigger.</p>
+
+  <h2>Google Maps (map-enabled test builds)</h2>
+  <p>The map editor uses Google Maps to load street and satellite imagery over the internet. Google processes map requests and technical data, including IP address, device and SDK information, an SDK-specific identifier, crash information and map interactions. Map camera requests relate to the area you view, including your current position if you choose to centre the map there. This is separate from Limenvo's local trigger calculations.</p>
+  <p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">Google Maps SDK data disclosures</a>. Builds without a configured Maps key show a labelled local shape preview instead; that preview does not load Google Maps.</p>
 
   <h2>Keeping and deleting your data</h2>
   <p>Your saved settings remain on your device until you remove them. Delete sequences and gates in the app, or clear the app's storage or uninstall it to remove all its local data. Remove a gate from its sequences before deleting it. Limenvo excludes its saved settings from Android cloud backup and device transfer. Deleting app data does not delete records kept by your phone app, mobile provider or gate operator.</p>
